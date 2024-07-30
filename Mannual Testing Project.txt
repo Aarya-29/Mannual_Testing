@@ -1,0 +1,282 @@
+Mannual Testing Project
+1. Organization 
+ General Information
+ Locations
+ Stricture
+2. Nationalaties
+3. Cooperate Branding
+
+
+Here is a more detailed and expanded version of the test cases for the nationality domain in the OrangeHRM website:
+
+Test Case 1: Add Nationality
+
+ Objective: To add a new nationality to the system
+ Prerequisites:
+     Valid login credentials
+     Access to the Nationality page
+     No duplicate nationality exists
+ Steps:
+    1. Log in to the OrangeHRM website
+    2. Navigate to the Nationality page
+    3. Click the "Add" button
+    4. Enter a new nationality name (e.g., "Australian")
+    5. Click "Save"
+ Data:
+     Nationality name = "Australian"
+     Nationality code (optional) = "AUS"
+ Expected Result:
+     The new nationality is added successfully
+     The nationality is visible in the list
+     No error messages are displayed
+ Actual Result: [Insert actual result here, e.g., "Pass" or "Fail" with any error messages]
+
+Test Case 2: Edit Nationality
+
+ Objective: To edit an existing nationality
+ Prerequisites:
+     Valid login credentials
+     Access to the Nationality page
+     Existing nationality to edit (e.g., "Indian")
+ Steps:
+    1. Log in to the OrangeHRM website
+    2. Navigate to the Nationality page
+    3. Select the existing nationality (e.g., "Indian")
+    4. Click the "Edit" button
+    5. Modify the nationality name (e.g., "Indian (updated)")
+    6. Click "Save"
+ Data:
+     Nationality name = "Indian (updated)"
+     Nationality code (optional) = "IND" (unchanged)
+ Expected Result:
+     The nationality is updated successfully
+     The updated nationality is visible in the list
+     No error messages are displayed
+ Actual Result: [Insert actual result here]
+
+Test Case 3: Delete Nationality
+
+ Objective: To delete an existing nationality
+ Prerequisites:
+     Valid login credentials
+     Access to the Nationality page
+     Existing nationality to delete (e.g., "Canadian")
+ Steps:
+    1. Log in to the OrangeHRM website
+    2. Navigate to the Nationality page
+    3. Select the existing nationality (e.g., "Canadian")
+    4. Click the "Delete" button
+    5. Confirm deletion
+ Data:
+     Nationality name = "Canadian"
+ Expected Result:
+     The nationality is deleted successfully
+     The nationality is no longer visible in the list
+     No error messages are displayed
+ Actual Result: [Insert actual result here]
+
+Test Case 4: Validate Nationality Name
+
+ Objective: To validate that the nationality name field accepts only valid data
+ Prerequisites:
+     Valid login credentials
+     Access to the Nationality page
+ Steps:
+    1. Log in to the OrangeHRM website
+    2. Navigate to the Nationality page
+    3. Attempt to add a new nationality with an invalid name (e.g., "!@#$%^&*()")
+    4. Click "Save"
+ Data:
+     Nationality name = "!@#$%^&*()"
+ Expected Result:
+     An error message is displayed indicating that the nationality name is invalid
+     The nationality is not added to the list
+ Actual Result: [Insert actual result here]
+
+Test Case 5: Duplicate Nationality
+
+ Objective: To validate that duplicate nationalities cannot be added
+ Prerequisites:
+     Valid login credentials
+     Access to the Nationality page
+     Existing nationality (e.g., "American")
+ Steps:
+    1. Log in to the OrangeHRM website
+    2. Navigate to the Nationality page
+    3. Attempt to add a new nationality with a duplicate name (e.g., "American")
+    4. Click "Save"
+ Data:
+     Nationality name = "American"
+ Expected Result:
+     An error message is displayed indicating that a duplicate nationality exists
+     The nationality is not added to the list
+ Actual Result: [Insert actual result here]
+
+Let me know if you need any further modifications or additional test cases!
+
+********************************************************************************************************************************************************************************************
+
+Sure! Here are detailed test cases for the "Co-operative Branding" domain in the OrangeHRM website. Since "Co-operative Branding" is not a standard module in OrangeHRM, I'll assume this module is customized for your organization's specific needs. Please adjust the details accordingly based on the actual implementation.
+
+### 1. Co-operative Branding Module
+
+**Test Case 1.1: Verify Co-operative Branding Page Loads Successfully**
+
+- **Objective:** Ensure the Co-operative Branding page loads without errors.
+- **Prerequisites:** User must have valid login credentials and appropriate permissions.
+- **Steps:**
+  1. Log in to OrangeHRM with valid credentials.
+  2. Navigate to the Co-operative Branding module in the main menu.
+- **Test Data:** User login credentials.
+- **Expected Result:** The Co-operative Branding page loads successfully, displaying branding options.
+- **Actual Result:** (To be filled after execution)
+
+**Test Case 1.2: Verify Adding a New Branding Campaign**
+
+- **Objective:** Ensure a new branding campaign can be added successfully.
+- **Prerequisites:** User must have valid login credentials and appropriate permissions.
+- **Steps:**
+  1. Log in to OrangeHRM with valid credentials.
+  2. Navigate to Co-operative Branding module.
+  3. Click on the "Add Campaign" button.
+  4. Fill in the required fields (e.g., Campaign Name, Description, Start Date, End Date, Branding Materials).
+  5. Click "Save."
+- **Test Data:** New campaign details (e.g., Campaign Name: "Summer Promotion", Description: "Branding for summer sale", Start Date: "2024-07-01", End Date: "2024-09-01").
+- **Expected Result:** The new branding campaign is added and displayed in the list of campaigns.
+- **Actual Result:** (To be filled after execution)
+
+**Test Case 1.3: Verify Editing an Existing Branding Campaign**
+
+- **Objective:** Ensure changes to an existing branding campaign can be saved successfully.
+- **Prerequisites:** User must have valid login credentials and appropriate permissions. At least one branding campaign should already exist.
+- **Steps:**
+  1. Log in to OrangeHRM with valid credentials.
+  2. Navigate to Co-operative Branding module.
+  3. Select an existing campaign from the list.
+  4. Click on the "Edit" button.
+  5. Update the relevant fields (e.g., Campaign Name, Description).
+  6. Click "Save."
+- **Test Data:** Updated campaign details (e.g., new Description).
+- **Expected Result:** Changes are saved successfully, and the updated information is displayed.
+- **Actual Result:** (To be filled after execution)
+
+**Test Case 1.4: Verify Deleting a Branding Campaign**
+
+- **Objective:** Ensure a branding campaign can be deleted successfully.
+- **Prerequisites:** User must have valid login credentials and appropriate permissions. At least one branding campaign should already exist.
+- **Steps:**
+  1. Log in to OrangeHRM with valid credentials.
+  2. Navigate to Co-operative Branding module.
+  3. Select an existing campaign from the list.
+  4. Click on the "Delete" button.
+  5. Confirm the deletion.
+- **Test Data:** Campaign to be deleted.
+- **Expected Result:** The selected campaign is deleted and no longer displayed in the list of campaigns.
+- **Actual Result:** (To be filled after execution)
+
+**Test Case 1.5: Verify Viewing Details of a Branding Campaign**
+
+- **Objective:** Ensure detailed information of a branding campaign can be viewed successfully.
+- **Prerequisites:** User must have valid login credentials and appropriate permissions. At least one branding campaign should already exist.
+- **Steps:**
+  1. Log in to OrangeHRM with valid credentials.
+  2. Navigate to Co-operative Branding module.
+  3. Select an existing campaign from the list.
+  4. Click on the campaign to view its details.
+- **Test Data:** Existing campaign.
+- **Expected Result:** Detailed information of the selected campaign is displayed, including all relevant fields.
+- **Actual Result:** (To be filled after execution)
+
+---
+
+These test cases can be customized and expanded based on specific requirements and functionalities provided by the Co-operative Branding module in OrangeHRM. Adjust the test data and steps as necessary to match the actual implementation.
+********************************************************************************************************************************************************************************************
+
+Certainly! Here are detailed test cases for the "General Information," "Locations," and "Structure" modules in the Organization domain of the OrangeHRM website.
+
+### 1. General Information Module
+
+**Test Case 1.1: Verify General Information Page Loads Successfully**
+
+- **Objective:** Ensure the General Information page loads without errors.
+- **Prerequisites:** User must have valid login credentials and appropriate permissions.
+- **Steps:**
+  1. Log in to OrangeHRM with valid credentials.
+  2. Navigate to the Admin module.
+  3. Click on "Organization" in the left menu.
+  4. Select "General Information" from the submenu.
+- **Test Data:** User login credentials.
+- **Expected Result:** The General Information page loads successfully, displaying the organization's details.
+- **Actual Result:** (To be filled after execution)
+
+**Test Case 1.2: Verify Editing and Saving General Information**
+
+- **Objective:** Ensure changes to General Information can be saved successfully.
+- **Prerequisites:** User must have valid login credentials and appropriate permissions.
+- **Steps:**
+  1. Log in to OrangeHRM with valid credentials.
+  2. Navigate to Admin > Organization > General Information.
+  3. Click on the "Edit" button.
+  4. Update relevant fields (e.g., Organization Name, Tax ID, Phone Number).
+  5. Click "Save."
+- **Test Data:** Updated organization details (e.g., new phone number).
+- **Expected Result:** Changes are saved successfully, and the updated information is displayed.
+- **Actual Result:** (To be filled after execution)
+
+### 2. Locations Module
+
+**Test Case 2.1: Verify Locations Page Loads Successfully**
+
+- **Objective:** Ensure the Locations page loads without errors.
+- **Prerequisites:** User must have valid login credentials and appropriate permissions.
+- **Steps:**
+  1. Log in to OrangeHRM with valid credentials.
+  2. Navigate to Admin > Organization > Locations.
+- **Test Data:** User login credentials.
+- **Expected Result:** The Locations page loads successfully, displaying the list of locations.
+- **Actual Result:** (To be filled after execution)
+
+**Test Case 2.2: Verify Adding a New Location**
+
+- **Objective:** Ensure a new location can be added successfully.
+- **Prerequisites:** User must have valid login credentials and appropriate permissions.
+- **Steps:**
+  1. Log in to OrangeHRM with valid credentials.
+  2. Navigate to Admin > Organization > Locations.
+  3. Click on the "Add" button.
+  4. Fill in the required fields (e.g., Name, Country, State, City, Address).
+  5. Click "Save."
+- **Test Data:** New location details (e.g., Name: "New Office", Country: "USA", State: "California", City: "Los Angeles").
+- **Expected Result:** The new location is added and displayed in the list of locations.
+- **Actual Result:** (To be filled after execution)
+
+### 3. Structure Module
+
+**Test Case 3.1: Verify Structure Page Loads Successfully**
+
+- **Objective:** Ensure the Structure page loads without errors.
+- **Prerequisites:** User must have valid login credentials and appropriate permissions.
+- **Steps:**
+  1. Log in to OrangeHRM with valid credentials.
+  2. Navigate to Admin > Organization > Structure.
+- **Test Data:** User login credentials.
+- **Expected Result:** The Structure page loads successfully, displaying the organization's structure.
+- **Actual Result:** (To be filled after execution)
+
+**Test Case 3.2: Verify Adding a New Unit in Structure**
+
+- **Objective:** Ensure a new unit can be added to the organization's structure successfully.
+- **Prerequisites:** User must have valid login credentials and appropriate permissions.
+- **Steps:**
+  1. Log in to OrangeHRM with valid credentials.
+  2. Navigate to Admin > Organization > Structure.
+  3. Click on the "Add" button.
+  4. Fill in the required fields (e.g., Unit ID, Name, Description).
+  5. Click "Save."
+- **Test Data:** New unit details (e.g., Unit ID: "102", Name: "Marketing", Description: "Marketing Department").
+- **Expected Result:** The new unit is added and displayed in the organization's structure.
+- **Actual Result:** (To be filled after execution)
+
+---
+
+These test cases can be adapted and expanded based on specific requirements and additional functionalities provided by OrangeHRM.
